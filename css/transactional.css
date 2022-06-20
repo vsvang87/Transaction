@@ -1,0 +1,235 @@
+:root {
+    --first-color: #006391;
+    --second-color: #e21737;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* navbar */
+.container {
+    width: min(60%, 70rem);
+    margin-inline: auto;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+    margin-top: 2rem;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links li {
+    padding: .5rem;
+    
+    list-style: none;
+}
+.nav-links li a {
+    color: var(--first-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.message-container {
+    padding-top: 1rem;
+    line-height: 1.5rem;
+}
+ /* Domino Tracker Container */
+ .domino-tracker-container {
+    border: 2px solid var(--first-color);
+    border-radius: 20px;
+ }
+ .domino-tracker-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background: var(--first-color);
+    border-radius: 17px 17px 0 0;
+ }
+
+ .box-1 {
+    width: 43%;
+ }
+ .box-2 {
+    width: 20%;
+ }
+ .box-3 {
+    width: 38%;
+ }
+ .divider {
+    width: 3px;
+    height: 35px;
+    background: #fff;
+    margin: 0 2rem;
+ }
+ .domino-tracker-title {
+    color: #fff;
+    text-transform: uppercase;
+ }
+ .domino-tracker-content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff;
+ }
+  /* Customer Information */
+  .customer-info-container {
+    margin: 0 1.5rem;
+  }
+  .info-title-blue {
+    color: var(--first-color);
+    font-size: 1.2rem;
+    padding: 0;
+    margin-bottom: .5rem;
+  }
+  .text-bold {
+    font-weight: bold;
+  }
+  .info-text {
+    padding-top: 0;
+    margin: .5rem 0;
+  }
+  .address {
+    padding: 0;
+    margin: 0;
+    margin-left: 3rem;
+    text-align: left;
+  }
+   /* Don't Forget to Claim your rewards */
+.reward-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    margin: 0 1.5rem;
+}
+.col {
+    width: 31%;
+}
+.col-1 {
+   width: 22%;
+}
+.col-2 {
+    width: 45%;
+}
+.text-red {
+    color: var(--second-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+.claim-point-btn {
+    background: var(--second-color);
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Order Details */
+.order-detail-container {
+    margin: 0 2rem;
+}
+.order-detail-container::after {
+    content: "";
+    display: block;
+    background: var(--first-color);
+    width: 100%;
+    height: 2px;
+}
+/* Quantity Container */
+.quantity-container {
+    padding-top: 1rem;
+    margin: 0 2rem;
+}
+.table-data {
+    text-align: left;
+    padding: 0.5rem 2rem;
+    
+}
+.table {
+    margin-bottom: 0.5rem;
+}
+.quantity-container::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--first-color);
+}
+/* Coupon Container */
+.coupon-container {
+    margin: 0 2rem;
+    
+}
+.food-total-container {
+    text-align: right;
+}
+.total-amount {
+    color: var(--second-color);
+    font-size: 1.2rem;
+}
+/* Payment Details */
+.payment-detail-container {
+    margin: 0 2rem;
+}
+.payment-detail-container p {
+    padding: 0;
+    margin: 0;
+}
+/* Advertisement Container */
+.advertise-container {
+    margin: 0 2rem;
+}
+
+
+/* Media Query */
+@media (max-width: 920px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+@media (max-width: 850px) {
+    .container {
+        width: 95%;
+    }
+}
+@media (max-width: 590px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .domino-tracker-content {
+        flex-direction: column;
+        padding: .5rem 0;
+    }
+    .divider {
+        width: 80%;
+        height: 2px;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 412px) {
+    .domino-tracker-title {
+        text-align: center;
+    }
+    .domino-tracker-content a {
+        text-align: center;
+    }
+}
+@media (max-width: 320px) {
+    .domino-tracker-title {
+        text-align: center;
+    }
+    .domino-tracker-content a {
+        text-align: center;
+    }
+}
