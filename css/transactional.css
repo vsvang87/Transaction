@@ -43,6 +43,7 @@ body {
  .domino-tracker-container {
     border: 2px solid var(--first-color);
     border-radius: 20px;
+    margin: 1rem 0;
  }
  .domino-tracker-content {
     display: flex;
@@ -180,6 +181,7 @@ body {
 /* Payment Details */
 .payment-detail-container {
     margin: 0 2rem;
+    padding-bottom: 1.2rem;
 }
 .payment-detail-container p {
     padding: 0;
@@ -187,10 +189,75 @@ body {
 }
 /* Advertisement Container */
 .advertise-container {
-    margin: 0 2rem;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--first-color);
+    border-radius: 20px;
+    text-align: center;
+    color: var(--first-color);
+    
 }
-
-
+.advertise-free-pizza {
+padding: 0 1rem;
+} 
+.advertise-free-pizza p {
+    padding: 0.1rem 0;
+    margin: 0;
+}
+.info-title-pizza {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--first-color);
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+.text-small {
+    font-size: .8rem;
+}
+.text-medium {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.extra-small-text {
+    font-size: 0.5rem;
+    color: darkgray;
+}
+.promo-btn {
+    background: var(--second-color);
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: .5rem 0;
+}
+.email-link {
+    text-decoration: none;
+    color: royalblue;
+}
+.extra-small-text {
+    padding-bottom: 1rem;
+}
+/* Report Issue Container */
+.report-issue-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+.report-col-1 {
+    width: 48%;
+}
+.report-col-2 {
+    width: 48%;
+}
+.report-issue-img {
+    width: 100%;
+}
 /* Media Query */
 @media (max-width: 920px) {
     .navbar {
@@ -216,6 +283,13 @@ body {
         height: 2px;
         margin-bottom: 1rem;
     }
+    /*reward container*/
+    .reward-container {
+        flex-direction: column;
+    }
+    .col {
+        padding: 0.5rem 0;
+    }
 }
 @media (max-width: 412px) {
     .domino-tracker-title {
@@ -226,6 +300,9 @@ body {
     }
 }
 @media (max-width: 320px) {
+    .container {
+        width: 95%;
+    }
     .domino-tracker-title {
         text-align: center;
     }
